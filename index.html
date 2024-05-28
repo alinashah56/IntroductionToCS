@@ -3,23 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - My Professional Website</title>
+    <title>Home - Premium Watches</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
         }
         header {
             background-color: #333;
             color: #fff;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
         }
         nav ul {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
         nav ul li {
             display: inline;
@@ -28,21 +35,61 @@
         nav ul li a {
             color: #fff;
             text-decoration: none;
+            font-weight: bold;
         }
         .container {
             width: 80%;
-            margin: auto;
+            margin: 100px auto 0 auto;
             overflow: hidden;
         }
         .main-content {
             padding: 20px 0;
             text-align: center;
         }
+        .main-content h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .main-content p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+        .watch-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .watch-item {
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            width: calc(33% - 40px);
+            box-sizing: border-box;
+            transition: transform 0.2s;
+        }
+        .watch-item img {
+            max-width: 100%;
+            height: auto;
+        }
+        .watch-item h3 {
+            margin: 15px 0;
+            font-size: 1.5em;
+        }
+        .watch-item p {
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+        .watch-item:hover {
+            transform: translateY(-10px);
+        }
         footer {
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 10px 0;
+            padding: 20px 0;
             position: fixed;
             width: 100%;
             bottom: 0;
@@ -52,7 +99,7 @@
 <body>
     <header>
         <div class="container">
-            <h1>Alina Shah</h1>
+            <h1>Premium Watches</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -66,13 +113,30 @@
 
     <div class="container">
         <div class="main-content">
-            <h2>Welcome to My Website</h2>
-            <p>We offer a range of services to help you achieve the results you’re after.</p>
+            <h2>Welcome to Our Exclusive Watch Collection</h2>
+            <p>Discover our premium range of watches crafted with precision and elegance. Whether you are looking for a stylish accessory or a functional timepiece, we have the perfect watch for you.</p>
+            <div class="watch-grid">
+                <div class="watch-item">
+                    <img src="watch1.jpg" alt="Luxury Watch 1">
+                    <h3>Luxury Watch 1</h3>
+                    <p>A timeless piece that exudes sophistication and class.</p>
+                </div>
+                <div class="watch-item">
+                    <img src="watch2.jpg" alt="Luxury Watch 2">
+                    <h3>Luxury Watch 2</h3>
+                    <p>Crafted with the finest materials, this watch is perfect for any occasion.</p>
+                </div>
+                <div class="watch-item">
+                    <img src="watch3.jpg" alt="Luxury Watch 3">
+                    <h3>Luxury Watch 3</h3>
+                    <p>Combining elegance and functionality, this watch is a must-have.</p>
+                </div>
+            </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2024 My Professional Website</p>
+        <p>&copy; 2024 Premium Watches</p>
     </footer>
 </body>
 </html>
